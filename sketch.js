@@ -76,3 +76,5 @@ function draw() {
         ellipse(this.x, this.y, this.size);
     }
 }
+
+
