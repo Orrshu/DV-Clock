@@ -6,16 +6,9 @@ function setup() {
     createCanvas(800, 600);
 }
 
-let lastPrintedMinute = -1; // Initialize to a value that will never be a real minute
 
 function draw() {
     background(225);
-
-    // Check if the minute has changed
-    let currentMinute = minute();
-    if (currentMinute !== lastPrintedMinute) {
-        console.log(currentMinute); // Print the minute
-        lastPrintedMinute = currentMinute;
 
     let isAM = hour() < 12;
     let oceanColor = isAM ? color(0, 150, 255) : color(0, 71, 171); // Light blue for AM, dark blue for PM
