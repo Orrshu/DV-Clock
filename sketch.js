@@ -23,7 +23,7 @@ function draw() {
     let currentHour = hour();
     let isAM = currentHour < 12;
 
-    let minuteOceanColor = isAM ? color(137, 207, 240) : color(0, 0, 139);
+    let minuteOceanColor = isAM ? color(137, 207, 240) : color(0, 150, 255);
     let hourOceanColor = isAM ? color(100, 149, 237) : color(25, 25, 112);
 
     if (currentSecond !== lastSecond) {
